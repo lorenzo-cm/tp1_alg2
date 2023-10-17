@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 anchor:int
 
@@ -12,6 +13,10 @@ class Point:
     
     def __eq__(self, p1) -> bool:
         return True if (self.x == p1.x and self.y == p1.y) else False
+    
+    def __hash__(self):
+        # Calculate the hash based on the x and y attributes
+        return hash((self.x, self.y))
     
 
 class Segment:
@@ -35,29 +40,55 @@ def compare_points(p1: Point, p2: Point) -> int:
     return o
 
 
-def plot_convex_hull(points: list[Point], hull_points: list[Point]):
-    # Extract the x and y coordinates of the points
-    x_coords = [p.x for p in points]
-    y_coords = [p.y for p in points]
-
-    hull_x = [p.x for p in hull_points]
-    hull_y = [p.y for p in hull_points]
-
-    # Plot the points
-    plt.scatter(x_coords, y_coords, c='blue')
-
-    # Plot the convex hull
-    plt.plot(hull_x + [hull_x[0]], hull_y + [hull_y[0]], c='red')  # Adding the starting point to close the hull
-
-    plt.show()
+def hull_to_segments(hull: list[Point]) -> list[Segment]:
+    segments = []
+    for i in range(len(hull)):
+        segments.append(Segment(hull[i], hull[(i+1) % len(hull)]))
+    return segments
 
 
-def plot_segments(segments: list[Segment]):
-    for segment in segments:
-        plt.plot([segment.points[0].x, segment.points[1].x], [segment.points[0].y, segment.points[1].y])
+def plot_grid_hulls_separation(X, y, hull1: list[Point], hull2: list[Point], intersection: bool, abc: tuple):
 
-    plt.xlabel('X')
-    plt.ylabel('Y')
-    plt.title('Segments Plot')
-    plt.grid(True)
+    fig, axes = plt.subplots(1, 2, figsize=(10, 10))
+
+    sns.scatterplot(x=X[:,0], y=X[:,1], hue=y, ax=axes[0])
+    axes[0].set_title("Dataset")
+
+    # Plot the points of both hulls
+    sns.scatterplot(x=[p.x for p in hull1], y=[p.y for p in hull1], ax=axes[1], label='Hull 1')
+    sns.scatterplot(x=[p.x for p in hull2], y=[p.y for p in hull2], ax=axes[1], label='Hull 2')
+
+    # Plot the lines of both hulls
+    axes[1].plot([p.x for p in hull1] + [hull1[0].x], [p.y for p in hull1] + [hull1[0].y])  # Close the hull1
+    axes[1].plot([p.x for p in hull2] + [hull2[0].x], [p.y for p in hull2] + [hull2[0].y])  # Close the hull2
+
+    # Plot the line of separation
+    if abc and not intersection:
+        a, b, c = abc
+        
+        # Centralize the line of separation
+        x_min = min(p.x for p in hull1 + hull2)
+        x_max = max(p.x for p in hull1 + hull2)
+        
+        # Shorten the line of separation
+        margin = 0.05 * (x_max - x_min)
+        x_min -= margin
+        x_max += margin
+        
+        # the X values for the line of separation
+        x_vals = [x_min, x_max]
+        
+        if b != 0:
+            y_vals = [(-a*xi - c) / b for xi in x_vals]
+        else:
+            y_vals = [(-c / a) for _ in x_vals]
+        axes[1].plot(x_vals, y_vals, '-g', label='Separating Line')
+
+
+    axes[1].set_title("Both Hulls")
+
+    # Adjust layout
+    plt.tight_layout()
+
+    # Show the plots
     plt.show()

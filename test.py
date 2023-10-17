@@ -3,34 +3,35 @@ import numpy as np
 from utils import *
 from graham_scan import graham_scan
 from sweep_line_intersection import sweep_line_intersection
+from dataset import get_2d_dataset
+from find_linear_separation import find_linear_separation
+
 
 if __name__ == '__main__':
-    points = []
-
-    x = np.round(np.random.rand(10) * 100, 3)
-    y = np.round(np.log(np.random.rand(10)) * 10, 3)
-
-    for i in range(len(x)):
-        points.append(Point(x[i], y[i]))
+    # circulo é um problema, pois tem o caso em que um
+    # circulo está dentro do outro
+    # desse modo não há interseção
+    # mas os pontos coexistem no mesmo espaço
+    X, y, X1, y1, X2, y2 = get_2d_dataset('blobs', n_samples=10000, noise=0.5)
     
-    print(points)
-    
-    hull_points = graham_scan(points)
-    print(hull_points)
+    # making the hull for each
+    hull1 = graham_scan([Point(x, y) for x, y in X1])
+    hull2 = graham_scan([Point(x, y) for x, y in X2])
 
-    plot_convex_hull(points, hull_points)
+    # making the segments for each hull
+    hull1_segments = hull_to_segments(hull1)
+    hull2_segments = hull_to_segments(hull2)
 
-    # SWEEP LINE INTERSECTION
+    # make the sweep line intersection
+    intersection = sweep_line_intersection(hull1_segments, hull2_segments)
 
-    # generate random segments
-    segments = []
-    x_values = np.round(np.random.rand(10) * 100, 3)
-    y_values = np.round(np.random.rand(10) * 100, 3)
+    if intersection:
+        print("Hull1 intersects with Hull2!")
+    else:
+        print("Hull1 does not intersect with Hull2!")
 
-    for i in range(0, len(x_values), 2):
-        p1 = Point(x_values[i], y_values[i])
-        p2 = Point(x_values[i+1], y_values[i+1])
-        segments.append(Segment(p1, p2))
+    abc = find_linear_separation(hull1, hull2)
 
-    print(sweep_line_intersection(segments))
-    plot_segments(segments)
+    # Plotting the data
+    plot_grid_hulls_separation(X, y, hull1, hull2, intersection, abc)
+
