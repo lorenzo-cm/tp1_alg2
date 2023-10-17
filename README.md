@@ -9,7 +9,7 @@ descrito acima
 linearmente separáveis
 - [x] Implementar o classificador que recebe um conjunto de amostras
 desconhecidas e atribui rótulos a elas
-- [x]. Implementar o método para computar as métricas de classificação para os
+- [x] Implementar o método para computar as métricas de classificação para os
 experimentos
 - [ ] Realizar os experimentos conforme a descrição acima
 - [ ] Redigir o relatório especificado acima
