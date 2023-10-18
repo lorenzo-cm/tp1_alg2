@@ -16,7 +16,7 @@ def find_closest_points(hull1, hull2):
     return closest_pair
 
 
-def find_linear_separation(hull1, hull2):
+def linear_separation(hull1, hull2):
     p1, p2 = find_closest_points(hull1, hull2)
 
     # midpoint
@@ -43,4 +43,4 @@ def find_linear_separation(hull1, hull2):
     b = -1
     c = my - m_perpendicular * mx
 
-    return a, b, c
+    return a, b, c, mx, my

@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
+import time
 
 anchor:int
 
@@ -47,7 +48,7 @@ def hull_to_segments(hull: list[Point]) -> list[Segment]:
     return segments
 
 
-def plot_grid_hulls_separation(X, y, hull1: list[Point], hull2: list[Point], intersection: bool, abc: tuple):
+def plot_grid_hulls_separation(X, y, hull1: list[Point], hull2: list[Point], intersection: bool, abc: tuple, abc_svm: tuple):
 
     fig, axes = plt.subplots(1, 2, figsize=(10, 10))
 
@@ -82,13 +83,46 @@ def plot_grid_hulls_separation(X, y, hull1: list[Point], hull2: list[Point], int
             y_vals = [(-a*xi - c) / b for xi in x_vals]
         else:
             y_vals = [(-c / a) for _ in x_vals]
-        axes[1].plot(x_vals, y_vals, '-g', label='Separating Line')
-
+        axes[1].plot(x_vals, y_vals, '-r', label='Requested model separating Line')
+    
+    # plot svm line of separation
+    if abc and not intersection:
+        a, b, c = abc_svm
+        
+        # Centralize the line of separation
+        x_min = min(p.x for p in hull1 + hull2)
+        x_max = max(p.x for p in hull1 + hull2)
+        
+        # Shorten the line of separation
+        margin = 0.05 * (x_max - x_min)
+        x_min -= margin
+        x_max += margin
+        
+        # the X values for the line of separation
+        x_vals = [x_min, x_max]
+        
+        if b != 0:
+            y_vals = [(-a*xi - c) / b for xi in x_vals]
+        else:
+            y_vals = [(-c / a) for _ in x_vals]
+        axes[1].plot(x_vals, y_vals, '-g', label='SVM best separating Line')
 
     axes[1].set_title("Both Hulls")
+    axes[1].legend()
 
     # Adjust layout
     plt.tight_layout()
 
     # Show the plots
     plt.show()
+
+
+def timer(funct):
+    def wrapper(*args, **kwargs):
+        start_time = time.perf_counter()  # Begin the timer
+        result = funct(*args, **kwargs)  # Call the actual function
+        end_time = time.perf_counter()  # End the timer
+        elapsed_time = end_time - start_time
+        print(f"{funct.__name__}: {elapsed_time:.4f}")
+        return result
+    return wrapper

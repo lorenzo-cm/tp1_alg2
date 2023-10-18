@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.datasets import make_moons, make_circles, make_blobs
 
-def get_2d_dataset(dataset_name, n_samples=1000, noise=0.3):
+def get_dataset(dataset_name, n_samples=1000, noise=0.3):
     """
     Returns a 2D dataset based on the provided dataset name.
 
@@ -35,14 +35,3 @@ def get_2d_dataset(dataset_name, n_samples=1000, noise=0.3):
     y2 = y[y == 1]
     
     return X, y, X1, y1, X2, y2
-
-
-if __name__ == '__main__':
-    X1, y1, X2, y2 = get_2d_dataset('moons')
-    print(X1.shape, y1.shape, X2.shape, y2.shape)
-
-    # Plotting the data
-    sns.scatterplot(x=X1[:, 0], y=X1[:, 1], color='blue', label='Group 0')
-    sns.scatterplot(x=X2[:, 0], y=X2[:, 1], color='red', label='Group 1')
-    plt.legend()
-    plt.show()

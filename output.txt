@@ -1,0 +1,1823 @@
+time_graham_scan: 0.0368
+time_graham_scan: 0.0384
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0365
+time_graham_scan: 0.0368
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0067
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0374
+time_graham_scan: 0.0390
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0069
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0371
+time_graham_scan: 0.0370
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0373
+time_graham_scan: 0.0369
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0393
+time_graham_scan: 0.0383
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0069
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0381
+time_graham_scan: 0.0378
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+intersects
+
+
+time_graham_scan: 0.0385
+time_graham_scan: 0.0375
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0070
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0374
+time_graham_scan: 0.0376
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+intersects
+
+
+time_graham_scan: 0.0359
+time_graham_scan: 0.0358
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0362
+time_graham_scan: 0.0362
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+intersects
+
+
+time_graham_scan: 0.0361
+time_graham_scan: 0.0367
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+time_linear_separation: 0.0003
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0369
+time_graham_scan: 0.0371
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0369
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0357
+time_graham_scan: 0.0368
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0067
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0354
+time_graham_scan: 0.0353
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0373
+time_graham_scan: 0.0374
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0070
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0380
+time_graham_scan: 0.0382
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0069
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0371
+time_graham_scan: 0.0376
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0069
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0378
+time_graham_scan: 0.0377
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0069
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0373
+time_graham_scan: 0.0372
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0069
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0385
+time_graham_scan: 0.0367
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0070
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0384
+time_graham_scan: 0.0365
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0368
+time_graham_scan: 0.0376
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0380
+time_graham_scan: 0.0383
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0073
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0366
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 0.9999, Precision: 0.9998000399920016, Recall: 1.0, F1 Score: 0.9999000099990001
+
+
+time_graham_scan: 0.0358
+time_graham_scan: 0.0365
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0067
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0366
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0384
+time_graham_scan: 0.0379
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0069
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0371
+time_graham_scan: 0.0371
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0380
+time_graham_scan: 0.0378
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0370
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0067
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0382
+time_graham_scan: 0.0381
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0365
+time_graham_scan: 0.0369
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0368
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0365
+time_graham_scan: 0.0369
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0366
+time_graham_scan: 0.0372
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0382
+time_graham_scan: 0.0381
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0373
+time_graham_scan: 0.0377
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0070
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0378
+time_graham_scan: 0.0374
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0070
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0370
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0067
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0359
+time_graham_scan: 0.0358
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0374
+time_graham_scan: 0.0365
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0069
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0366
+time_graham_scan: 0.0367
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0067
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0364
+time_graham_scan: 0.0368
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0368
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0068
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0375
+time_graham_scan: 0.0378
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0070
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0379
+time_graham_scan: 0.0388
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0067
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0372
+time_graham_scan: 0.0377
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0366
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0382
+time_graham_scan: 0.0377
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0003
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0069
+METRICS: Accuracy: 0.9999, Precision: 0.9998000399920016, Recall: 1.0, F1 Score: 0.9999000099990001
+
+
+time_graham_scan: 0.0374
+time_graham_scan: 0.0373
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0360
+time_graham_scan: 0.0364
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0077
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0369
+time_graham_scan: 0.0370
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0368
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0366
+time_graham_scan: 0.0368
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0362
+time_graham_scan: 0.0359
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0077
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0361
+time_graham_scan: 0.0363
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0373
+time_graham_scan: 0.0372
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0372
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0368
+time_graham_scan: 0.0371
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0371
+time_graham_scan: 0.0371
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0363
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0077
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0369
+time_graham_scan: 0.0370
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0365
+time_graham_scan: 0.0367
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0370
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0370
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0365
+time_graham_scan: 0.0365
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0359
+time_graham_scan: 0.0358
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0078
+METRICS: Accuracy: 0.9708, Precision: 0.9448223733938019, Recall: 1.0, F1 Score: 0.9716284492809949
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0371
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0364
+time_graham_scan: 0.0365
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0374
+time_graham_scan: 0.0380
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+intersects
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0371
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0369
+time_graham_scan: 0.0369
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+intersects
+
+
+time_graham_scan: 0.0364
+time_graham_scan: 0.0368
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0077
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0365
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0373
+time_graham_scan: 0.0373
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0003
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0400
+time_graham_scan: 0.0399
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0003
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0086
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0377
+time_graham_scan: 0.0379
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0083
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0405
+time_graham_scan: 0.0407
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0003
+intersects
+
+
+time_graham_scan: 0.0377
+time_graham_scan: 0.0420
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0083
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0409
+time_graham_scan: 0.0477
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+time_linear_separation: 0.0006
+not intersects
+time_linear_classification: 0.0119
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0381
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0081
+METRICS: Accuracy: 0.9649, Precision: 1.0, Recall: 0.9298, F1 Score: 0.963623173385843
+
+
+time_graham_scan: 0.0374
+time_graham_scan: 0.0377
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0404
+time_graham_scan: 0.0374
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0376
+time_graham_scan: 0.0383
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0001
+not intersects
+time_linear_classification: 0.0081
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0382
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0371
+time_graham_scan: 0.0367
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0369
+time_graham_scan: 0.0383
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+time_linear_separation: 0.0002
+not intersects
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0369
+time_graham_scan: 0.0375
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0380
+time_graham_scan: 0.0375
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0362
+time_graham_scan: 0.0364
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0358
+time_graham_scan: 0.0364
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0368
+time_graham_scan: 0.0367
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0357
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0371
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0001
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0375
+time_graham_scan: 0.0382
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+not intersects
+time_linear_separation: 0.0003
+time_linear_classification: 0.0083
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0371
+time_graham_scan: 0.0359
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0366
+time_graham_scan: 0.0375
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0369
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0377
+time_graham_scan: 0.0370
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0083
+METRICS: Accuracy: 0.6287, Precision: 0.7084548104956269, Recall: 0.4374, F1 Score: 0.5408680598491405
+
+
+time_graham_scan: 0.0372
+time_graham_scan: 0.0375
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0001
+time_linear_classification: 0.0085
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0379
+time_graham_scan: 0.0396
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0083
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0373
+time_graham_scan: 0.0372
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0363
+time_graham_scan: 0.0370
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0360
+time_graham_scan: 0.0376
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+not intersects
+time_linear_separation: 0.0003
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0378
+time_graham_scan: 0.0375
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0383
+time_graham_scan: 0.0381
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0081
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0373
+time_graham_scan: 0.0383
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0081
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0385
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0081
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0372
+time_graham_scan: 0.0376
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0376
+time_graham_scan: 0.0389
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0095
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0377
+time_graham_scan: 0.0376
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0083
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0366
+time_graham_scan: 0.0376
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0081
+METRICS: Accuracy: 0.9999, Precision: 1.0, Recall: 0.9998, F1 Score: 0.9998999899989999
+
+
+time_graham_scan: 0.0375
+time_graham_scan: 0.0374
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0388
+time_graham_scan: 0.0380
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0082
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0360
+time_graham_scan: 0.0375
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0381
+time_graham_scan: 0.0390
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0367
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0374
+time_graham_scan: 0.0377
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0391
+time_graham_scan: 0.0387
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0003
+time_linear_classification: 0.0082
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0373
+time_graham_scan: 0.0387
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0369
+time_graham_scan: 0.0374
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0376
+time_graham_scan: 0.0373
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0365
+time_graham_scan: 0.0372
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0373
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0366
+time_graham_scan: 0.0367
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0366
+time_graham_scan: 0.0368
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0001
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0363
+time_graham_scan: 0.0361
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0382
+time_graham_scan: 0.0384
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0001
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0362
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0369
+time_graham_scan: 0.0371
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0359
+time_graham_scan: 0.0355
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0360
+time_graham_scan: 0.0368
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0001
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0371
+time_graham_scan: 0.0384
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0364
+time_graham_scan: 0.0365
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0003
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0377
+time_graham_scan: 0.0378
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0389
+time_graham_scan: 0.0391
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0083
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0362
+time_graham_scan: 0.0364
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0001
+time_linear_classification: 0.0080
+METRICS: Accuracy: 0.8671, Precision: 0.99756031444836, Recall: 0.736, F1 Score: 0.847047991713661
+
+
+time_graham_scan: 0.0373
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0082
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0378
+time_graham_scan: 0.0387
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0383
+time_graham_scan: 0.0425
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0363
+time_graham_scan: 0.0368
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0081
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0415
+time_graham_scan: 0.0391
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0081
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0385
+time_graham_scan: 0.0391
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0373
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0368
+time_graham_scan: 0.0370
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0379
+time_graham_scan: 0.0368
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0358
+time_graham_scan: 0.0357
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0002
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0401
+time_graham_scan: 0.0411
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0085
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0357
+time_graham_scan: 0.0356
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0388
+time_graham_scan: 0.0379
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0374
+time_graham_scan: 0.0372
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0369
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0381
+time_graham_scan: 0.0380
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0001
+time_linear_classification: 0.0080
+METRICS: Accuracy: 0.999, Precision: 1.0, Recall: 0.998, F1 Score: 0.998998998998999
+
+
+time_graham_scan: 0.0394
+time_graham_scan: 0.0445
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0405
+time_graham_scan: 0.0396
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0384
+time_graham_scan: 0.0377
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0001
+time_linear_classification: 0.0082
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0368
+time_graham_scan: 0.0378
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0363
+time_graham_scan: 0.0364
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0001
+time_linear_classification: 0.0082
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0371
+time_graham_scan: 0.0371
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0366
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0001
+time_linear_classification: 0.0081
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0365
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0398
+time_graham_scan: 0.0367
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0372
+time_graham_scan: 0.0372
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0370
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0001
+time_linear_classification: 0.0081
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0369
+time_graham_scan: 0.0373
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0382
+time_graham_scan: 0.0369
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0380
+time_graham_scan: 0.0369
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0367
+time_graham_scan: 0.0376
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+
+time_graham_scan: 0.0369
+time_graham_scan: 0.0371
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0080
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0370
+time_graham_scan: 0.0369
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0079
+METRICS: Accuracy: 0.9759, Precision: 0.9548843433377939, Recall: 0.999, F1 Score: 0.9764441403577363
+
+
+time_graham_scan: 0.0369
+time_graham_scan: 0.0366
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+not intersects
+time_linear_separation: 0.0002
+time_linear_classification: 0.0078
+METRICS: Accuracy: 1.0, Precision: 1.0, Recall: 1.0, F1 Score: 1.0
+
+
+time_graham_scan: 0.0359
+time_graham_scan: 0.0357
+time_hull_to_segments: 0.0000
+time_hull_to_segments: 0.0000
+time_sweep_line_intersection: 0.0001
+intersects
+
+

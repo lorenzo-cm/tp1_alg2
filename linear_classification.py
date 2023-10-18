@@ -1,63 +1,74 @@
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
-from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
-
-def classify_points(X, y, plot_boundary=False):
+def linear_classification(X, y, a, b, mx, my):
     """
-    Classify points using a linear SVM and return accuracy, precision, recall, and F1 score.
-
-    Parameters:
-    - X (np.array): A dataset with x, y coordinates. Shape should be (n_samples, 2).
-    - y (np.array): Labels corresponding to each data point in X.
-    - plot_boundary (bool): If True, plot the decision boundary.
-
-    Returns:
-    - tuple: accuracy, precision, recall, F1 score
+    X: List of tuples containing points (x, y)
+    y: List of labels (0 or 1) for each point in X
+    a, b: Parameters of the line y = ax + b
+    Returns: accuracy, precision, recall, f1_score
     """
     
-    # Split the data
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+    if X.shape[0] != y.shape[0]:
+        raise Exception("X and y must have the same length")
+    
+    if X.shape[1] != 2:
+        raise Exception("X must be a list of tuples containing points (x, y)")
+    
+    TP = 0  # True Positives
+    FP = 0  # False Positives
+    TN = 0  # True Negatives
+    FN = 0  # False Negatives
 
-    # Train a linear SVM
-    clf = SVC(kernel='linear')
-    clf.fit(X_train, y_train)
+    # direction such that the label is 1
+    direction = ""
+    if y[0] == 1 and X[0][1] < a * X[0][0] + b:
+        direction = "below"
+    elif y[0] == 0 and X[0][1] >= a * X[0][0] + b:
+        direction = "below"
+    else:
+        direction = "above"
 
-    # Predict the labels for the test set
-    y_pred = clf.predict(X_test)
 
-    # Calculate metrics
-    accuracy = accuracy_score(y_test, y_pred)
-    precision = precision_score(y_test, y_pred)
-    recall = recall_score(y_test, y_pred)
-    f1 = f1_score(y_test, y_pred)
+    if direction == 'above':
+        for (x_val, y_val), label in zip(X, y):
+            predicted_class = 1 if y_val > a * x_val + b else 0
 
-    if plot_boundary:
-        plt.scatter(X[:, 0], X[:, 1], c=y, cmap='rainbow', alpha=0.7)
-        
-        h = .02
-        x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
-        y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
-        xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
-        
-        Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
-        Z = Z.reshape(xx.shape)
-        plt.contourf(xx, yy, Z, cmap='rainbow', alpha=0.5)
-        plt.title('Decision Boundary')
-        plt.xlabel('X-coordinate')
-        plt.ylabel('Y-coordinate')
-        plt.show()
+            if y_val == a * x_val + b:
+                if y_val > my:
+                    predicted_class = 1
+                else:
+                    predicted_class = 0
 
-    return clf, accuracy, precision, recall, f1
+            if predicted_class == 1 and label == 1:
+                TP += 1
+            elif predicted_class == 1 and label == 0:
+                FP += 1
+            elif predicted_class == 0 and label == 0:
+                TN += 1
+            elif predicted_class == 0 and label == 1:
+                FN += 1
+    else:
+        for (x_val, y_val), label in zip(X, y):
+            predicted_class = 1 if y_val < a * x_val + b else 0
 
-if __name__ == '__main__':
-    from dataset import get_2d_dataset
-
-    X, y, X1, y1, X2, y2 = get_2d_dataset('moons', n_samples=1000, noise=0.5)
-
-    clf, accuracy, precision, recall, f1 = classify_points(X, y, plot_boundary=True)
-    print(f'Accuracy: {accuracy:.2f}')
-    print(f'Precision: {precision:.2f}')
-    print(f'Recall: {recall:.2f}')
-    print(f'F1 Score: {f1:.2f}')
+            if y_val == a * x_val + b:
+                if y_val > my:
+                    predicted_class = 0
+                else:
+                    predicted_class = 1
+                    
+            if predicted_class == 1 and label == 1:
+                TP += 1
+            elif predicted_class == 1 and label == 0:
+                FP += 1
+            elif predicted_class == 0 and label == 0:
+                TN += 1
+            elif predicted_class == 0 and label == 1:
+                FN += 1
+            
+    accuracy = (TP + TN) / (TP + TN + FP + FN)
+    
+    # To avoid division by zero
+    precision = TP / (TP + FP) if TP + FP != 0 else 0
+    recall = TP / (TP + FN) if TP + FN != 0 else 0
+    f1_score = 2 * precision * recall / (precision + recall) if precision + recall != 0 else 0
+    
+    return accuracy, precision, recall, f1_score
