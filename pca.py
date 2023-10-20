@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
-from sklearn.datasets import load_iris, load_diabetes, load_wine
+from sklearn.datasets import fetch_kddcup99, fetch_covtype, fetch_rcv1, fetch_lfw_people, fetch_olivetti_faces, fetch_20newsgroups_vectorized
+from sklearn.preprocessing import LabelEncoder
 
 def apply_pca(data, labels, target_names=None, visualize=True):
     """
@@ -43,5 +44,7 @@ def apply_pca(data, labels, target_names=None, visualize=True):
     return data_pca
 
 if __name__ == '__main__':
-    data_obj = load_iris()
-    reduced_data = apply_pca(data_obj.data, data_obj.target, data_obj.target_names)
+    data_obj = fetch_kddcup99(subset='SA')  # fetching a smaller subset for quicker execution
+    labels_enc = LabelEncoder().fit_transform(data_obj.target)
+    target_names = np.unique(data_obj.target).astype(str)
+    reduced_data = apply_pca(data_obj.data, labels_enc, target_names, visualize=True)
