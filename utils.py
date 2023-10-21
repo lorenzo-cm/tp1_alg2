@@ -48,7 +48,11 @@ def hull_to_segments(hull: list[Point]) -> list[Segment]:
     return segments
 
 
-def plot_grid_hulls_separation(X, y, hull1: list[Point], hull2: list[Point], intersection: bool, abc: tuple, abc_svm: tuple):
+def plot_grid_hulls_separation(X, y, 
+                               hull1: list[Point], hull2: list[Point], 
+                               intersection: bool, 
+                               abc: tuple, abc_svm: tuple, 
+                               save=False, filename=""):
 
     fig, axes = plt.subplots(1, 2, figsize=(10, 10))
 
@@ -113,8 +117,9 @@ def plot_grid_hulls_separation(X, y, hull1: list[Point], hull2: list[Point], int
     # Adjust layout
     plt.tight_layout()
 
-    # Show the plots
-    plt.show()
+    # Save the figure
+    if save:
+        plt.savefig(filename)
 
 
 def timer(funct):
@@ -123,6 +128,5 @@ def timer(funct):
         result = funct(*args, **kwargs)  # Call the actual function
         end_time = time.perf_counter()  # End the timer
         elapsed_time = end_time - start_time
-        print(f"{funct.__name__}: {elapsed_time:.4f}")
-        return result
+        return result, elapsed_time
     return wrapper

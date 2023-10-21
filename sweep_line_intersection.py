@@ -1,4 +1,4 @@
-from utils import Point, Segment, orientation
+from utils import Point, Segment, orientation, timer
 import heapq
 
 class Event:
@@ -26,6 +26,7 @@ def do_segments_intersect(s1: Segment, s2: Segment) -> bool:
 
     return o1 != o2 and o3 != o4
 
+@timer
 def sweep_line_intersection(segments1: list[Segment], segments2: list[Segment]) -> bool:
     events: list[Event] = []
     for segment in segments1:

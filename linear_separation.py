@@ -1,4 +1,4 @@
-from utils import Point
+from utils import Point, timer
 import numpy as np
 
 # does not need to be super fast because it is used in hulls
@@ -15,7 +15,7 @@ def find_closest_points(hull1, hull2):
 
     return closest_pair
 
-
+@timer
 def linear_separation(hull1, hull2):
     p1, p2 = find_closest_points(hull1, hull2)
 

@@ -4,6 +4,7 @@ from functools import cmp_to_key
 from utils import *
 import utils
 
+@timer
 def graham_scan(points: list[Point]) -> list[Point]:
 
     if len(points) < 3:
