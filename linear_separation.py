@@ -2,7 +2,7 @@ from utils import Point, timer
 import numpy as np
 
 # does not need to be super fast because it is used in hulls
-def find_closest_points(hull1, hull2):
+def find_closest_points(hull1, hull2) -> tuple[Point, Point]:
     min_distance = float('inf')
     closest_pair = (None, None)
 
@@ -15,32 +15,34 @@ def find_closest_points(hull1, hull2):
 
     return closest_pair
 
+def find_line_coefficients(point1, point2):
+    x1, y1 = point1
+    x2, y2 = point2
+
+    # Vertical line
+    if x1 == x2:
+        return (float('inf'), x1)
+
+    # Horizontal line
+    if y1 == y2:
+        return (0, y1)
+
+    # Slope (a) for other cases
+    a = (y2 - y1) / (x2 - x1)
+    
+    # y-intercept (b)
+    b = y1 - a * x1
+
+    return a, b
+
 @timer
 def linear_separation(hull1, hull2):
     p1, p2 = find_closest_points(hull1, hull2)
 
-    # midpoint
-    mx = (p1.x + p2.x) / 2
-    my = (p1.y + p2.y) / 2
+    a_p1, b_p1 = find_line_coefficients(p1, p2)
 
-    # achar reta perpendicular = -1/m da reta que passa por p1 e p2
+    a = -1 / a_p1
 
-    if p2.x != p1.x:
-        # coeficiente angular da reta que passa por p1 e p2
-        m = (p2.y - p1.y) / (p2.x - p1.x)
+    b = p1.y - a * p1.x
 
-        # coeficiente angular da perpendicular
-        m_perpendicular = -1/m
-    else:
-        # se o x for igual, a reta é vertical (coeficiente angular zero)
-        m_perpendicular = 0
-
-    # ax + by + c = 0
-    # ax - y + c = 0
-    # ax + c = y
-    # y = ax + c
-    a = m_perpendicular
-    b = -1
-    c = my - m_perpendicular * mx
-
-    return a, b, c, mx, my
+    return a, b, a_p1, b_p1

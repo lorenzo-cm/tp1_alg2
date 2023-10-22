@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
 
-def classify_points_svm(X, y, plot_boundary=False):
+def classify_points_svm(X, y):
     """
     Classify points using a linear SVM and return accuracy, precision, recall, F1 score, and line coefficients.
 
@@ -17,21 +17,21 @@ def classify_points_svm(X, y, plot_boundary=False):
     - tuple: accuracy, precision, recall, F1 score, line coefficients (a, b, c)
     """
     
-    # Split the data
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
     # Train a linear SVM
     clf = SVC(kernel='linear')
-    clf.fit(X_train, y_train)
+    clf.fit(X, y)
 
+    return clf
+
+def metrics_svm(X, y, clf, plot_boundary=False):
     # Predict the labels for the test set
-    y_pred = clf.predict(X_test)
+    y_pred = clf.predict(X)
 
     # Calculate metrics
-    accuracy = accuracy_score(y_test, y_pred)
-    precision = precision_score(y_test, y_pred, average='macro')
-    recall = recall_score(y_test, y_pred, average='macro')
-    f1 = f1_score(y_test, y_pred, average='macro')
+    accuracy = accuracy_score(y, y_pred)
+    precision = precision_score(y, y_pred, average='macro')
+    recall = recall_score(y, y_pred, average='macro')
+    f1 = f1_score(y, y_pred, average='macro')
 
     if plot_boundary:
         # Plot the decision boundary
@@ -52,6 +52,5 @@ def classify_points_svm(X, y, plot_boundary=False):
         plt.show()
 
     a, b = clf.coef_[0]
-    c = clf.intercept_[0]
 
-    return accuracy, precision, recall, f1, (a, b, c)
+    return accuracy, precision, recall, f1, (a, b)

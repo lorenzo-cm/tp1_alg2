@@ -6,43 +6,28 @@ from sklearn.datasets import load_iris, load_wine, load_digits, load_breast_canc
 from utils import *
 from graham_scan import graham_scan
 from sweep_line_intersection import sweep_line_intersection
-from dataset import get_dataset
+from datasets import *
 from linear_separation import linear_separation
 from linear_classification import linear_classification
-from svm import classify_points_svm
+from svm import classify_points_svm, metrics_svm
 from pca import apply_pca
-
-def load_dataset(input_data):
-    # Check if the input is a string (filename)
-    if isinstance(input_data, str):
-        with open(input_data, 'r') as file:
-            data = file.read()
-            return data
-    
-    # Check if the input is a function
-    elif callable(input_data):
-        return input_data()
 
 
 if __name__ == '__main__':
 
-    time_hull = time_intersection = time_linear_sep = time_linear_class = 0
-    
-    datasets = {
-        "iris": load_iris,
-        "wine": load_wine,
-        "digits": load_digits,
-        "breast_cancer": load_breast_cancer
-    }
+    np.random.seed(42)
+
+    time_load_dataset = time_hull = time_intersection = time_linear_sep = time_linear_class = 0
 
     for d_name, d in datasets.items():
 
         print(f"Dataset: {d_name}")
 
-        data = load_dataset(d)
+        # load the dataset
 
-        df = pd.DataFrame(data.data, columns=data.feature_names)
-        df['target'] = data.target
+        init = time.perf_counter()
+        df = d()
+        time_load_dataset += time.perf_counter() - init
 
         # verify if it is a binary classification problem
         unique_classes = np.unique(df['target'])
@@ -63,10 +48,20 @@ if __name__ == '__main__':
         reduced_df = pd.DataFrame(reduced_data, columns=['x', 'y'])
         reduced_df['target'] = y_filtered
 
-        reduced_df = reduced_df.sample(frac=0.2).reset_index(drop=True)
+        # select 70% of the data for training and 30% for testing
+        train_df = reduced_df.sample(frac=0.7)
 
-        X1 = reduced_df[reduced_df['target'] == selected_classes[0]][['x', 'y']]
-        X2 = reduced_df[reduced_df['target'] == selected_classes[1]][['x', 'y']]
+        # grab 30% of the data for testing
+        test_df = reduced_df.drop(train_df.index)
+
+        # reset the index
+        train_df = train_df.reset_index(drop=True)
+        test_df = test_df.reset_index(drop=True)
+
+        # TRAINING PHASE
+
+        X1 = train_df[train_df['target'] == selected_classes[0]][['x', 'y']]
+        X2 = train_df[train_df['target'] == selected_classes[1]][['x', 'y']]
 
         # making the hull for each
         hull1, time1_ = graham_scan([Point(row['x'], row['y']) for _, row in X1.iterrows()])
@@ -75,12 +70,10 @@ if __name__ == '__main__':
         time_hull += time1_
         time_hull += time2_
 
-        # making the segments for each hull
-        hull1_segments = hull_to_segments(hull1)
-        hull2_segments = hull_to_segments(hull2)
+        all_segments1 = points_to_segments([Point(row['x'], row['y']) for _, row in X1.iterrows()])
+        all_segments2 = points_to_segments([Point(row['x'], row['y']) for _, row in X2.iterrows()])
 
-        # make the sweep line intersection
-        intersection, time_ = sweep_line_intersection(hull1_segments, hull2_segments)
+        intersection, time_ = sweep_line_intersection(all_segments1, all_segments2)
 
         time_intersection += time_
 
@@ -91,16 +84,23 @@ if __name__ == '__main__':
             print("Not intersects")
 
         # ax + by + c = 0
-        (a, b, c, mx, my), time_ = linear_separation(hull1, hull2)
+        (a, b, a_p1, a_p2), time_ = linear_separation(hull1, hull2)
 
         time_linear_sep += time_
+
+        clf = classify_points_svm(train_df[['x', 'y']].values, train_df['target'].values)
+
+        # TESTING PHASE
         
-        X = reduced_df[['x', 'y']].values
-        y = reduced_df['target'].values
+        # X = train_df[['x', 'y']].values
+        # y = train_df['target'].values
 
-        acc_svm, precision_svm, recall_svm, f1_svm, abc_svm = classify_points_svm(X, y, plot_boundary=False)
+        X = test_df[['x', 'y']].values
+        y = test_df['target'].values
 
-        (acc, precision, recall, f1), time_ = linear_classification(X, y, a, c, selected_classes[0], selected_classes[1])
+        acc_svm, precision_svm, recall_svm, f1_svm, ab_svm = metrics_svm(X, y, clf)
+
+        (acc, precision, recall, f1), time_ = linear_classification(X, y, a, b, selected_classes[0], selected_classes[1])
 
 
         time_linear_class += time_
@@ -110,11 +110,11 @@ if __name__ == '__main__':
         print(f"METRICS SVM: Accuracy: {acc_svm}, Precision: {precision_svm}, Recall: {recall_svm}, F1 Score: {f1_svm}")
 
         # Plotting the data
-        if not intersection:
-            plot_grid_hulls_separation(X, y, hull1, hull2, intersection, (a,b,c), abc_svm, save=True, filename=f"graphs/dataset_{d_name}.png")
+        plot_grid_hulls_separation(X, y, hull1, hull2, (a, b), ab_svm, (a_p1, a_p2), save=True, filename=f"graphs/dataset_{d_name}.png")
 
         print()
-        
+    
+    print(f"Time load dataset: {time_load_dataset}")
     print(f"Time hull: {time_hull}")
     print(f"Time intersection: {time_intersection}")
     print(f"Time linear separation: {time_linear_sep}")

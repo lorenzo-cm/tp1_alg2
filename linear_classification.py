@@ -1,28 +1,36 @@
 from utils import timer
 import numpy as np
+import matplotlib.pyplot as plt
 
 @timer
-def linear_classification(X, y, a, b, class1, class2):
-    # Classify the points based on the line equation
-    predictions = []
-    for point in X:
-        x, y = point[0], point[1]
-        y_line = a * x + b
-        if y > y_line:
-            predictions.append(class2)
-        else:
-            predictions.append(class1)
+def linear_classification(X, y, a, b, class1, class2, recursive=False):
+    
+    equation = lambda x: a*x + b
+    labels = []
+    TP, TN, FP, FN = 0, 0, 0, 0
 
-    # Evaluate the predictions using the true labels
-    positive_class = class2  # Treating class2 as the 'positive' class for metrics calculation
-    TP = sum((np.array(y) == positive_class) & (np.array(predictions) == positive_class))
-    TN = sum((np.array(y) != positive_class) & (np.array(predictions) != positive_class))
-    FP = sum((np.array(y) != positive_class) & (np.array(predictions) == positive_class))
-    FN = sum((np.array(y) == positive_class) & (np.array(predictions) != positive_class))
-    
+    for i, (x1, x2) in enumerate(X):
+        if x2 >= equation(x1):
+            labels.append(class1)
+        else:
+            labels.append(class2)
+
+        if labels[i] == y[i] and labels[i] == class1:
+            TP += 1
+        elif labels[i] == y[i] and labels[i] == class2:
+            TN += 1
+        elif labels[i] != y[i] and labels[i] == class1:
+            FP += 1
+        else:
+            FN += 1
+
     accuracy = (TP + TN) / (TP + TN + FP + FN)
-    precision = TP / (TP + FP) if TP + FP != 0 else 0
-    recall = TP / (TP + FN) if TP + FN != 0 else 0
-    f1_score = 2 * (precision * recall) / (precision + recall) if precision + recall != 0 else 0
-    
+
+    if accuracy <= 0.5 and not recursive:
+        return linear_classification(X, y, a, b, class2, class1, recursive=True, use_timer=False)
+
+    precision = TP / (TP + FP) if (TP + FP) != 0 else 0
+    recall = TP / (TP + FN) if (TP + FN) != 0 else 0
+    f1_score = 2 * (precision * recall) / (precision + recall) if (precision + recall) != 0 else 0
+
     return accuracy, precision, recall, f1_score
