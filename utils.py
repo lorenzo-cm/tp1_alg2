@@ -11,7 +11,7 @@ class Point:
         self.y = y
 
     def __repr__(self) -> str:
-        return f'({self.x},{self.y})'
+        return f'Point({self.x},{self.y})'
     
     def __eq__(self, p1) -> bool:
         return True if (self.x == p1.x and self.y == p1.y) else False
@@ -29,6 +29,9 @@ class Point:
             return self.y
         else:
             raise IndexError("Point indices must be 0 or 1")
+        
+    def round(self, decimals=5):
+        return Point(round(self.x, decimals), round(self.y, decimals))
 
 
 class Segment:
@@ -36,7 +39,7 @@ class Segment:
         self.points = [p1, p2]
 
     def __repr__(self) -> str:
-        return f'[{self.points[0]}, {self.points[1]}]'
+        return f'Segment({self.points[0]}, {self.points[1]})'
 
     def __eq__(self, other):
         return self.points == other.points
@@ -44,12 +47,9 @@ class Segment:
     def __hash__(self) -> int:
         return hash(tuple(self.points))
     
-    def rounded(self, decimals=5):
-        return Segment(
-            (round(self.points[0][0], decimals), round(self.points[0][1], decimals)),
-            (round(self.points[1][0], decimals), round(self.points[1][1], decimals))
-        )
-
+    def round(self, decimals=5):
+        return Segment(self.points[0].round(decimals), self.points[1].round(decimals))
+    
 
 def orientation(p0: Point, p1: Point, p2: Point) -> int:
     val = (p1.x - p0.x) * (p2.y - p1.y) - (p1.y - p0.y) * (p2.x - p1.x)
@@ -77,7 +77,7 @@ def points_to_segments(points: list[Point]) -> list[Segment]:
 def plot_grid_hulls_separation(X, y, 
                                hull1: list[Point], hull2: list[Point], 
                                ab: tuple, ab_svm: tuple, ab_p: tuple,
-                               save=False, filename=""):
+                               save=False, plot=True, filename=""):
     
     margin_x = 0.5
     margin_y = 0.5
@@ -124,6 +124,10 @@ def plot_grid_hulls_separation(X, y,
     plt.legend()
 
     # If save option is enabled
+
+    if plot:
+        plt.show()
+        
     if save:
         plt.savefig(filename)
         

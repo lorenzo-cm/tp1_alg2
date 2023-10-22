@@ -11,15 +11,15 @@ linearmente separáveis
 desconhecidas e atribui rótulos a elas
 - [x] Implementar o método para computar as métricas de classificação para os
 experimentos
-- [ ] Realizar os experimentos conforme a descrição acima
-- [ ] Redigir o relatório especificado acima
+- [x] Realizar os experimentos conforme a descrição acima
+- [x] Redigir o relatório especificado acima
 
 ---
 
 ### OBS:
 
-- [ ] Algoritmo redutor de dimensionalidade
-- [ ] A função de classificação retorna apenas o classificador e as métricas
+- [x] Algoritmo redutor de dimensionalidade
+- [x] A função de classificação retorna apenas o classificador e as métricas
 
 
 ### Resultados:
