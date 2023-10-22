@@ -73,15 +73,20 @@ if __name__ == '__main__':
         all_segments1 = points_to_segments([Point(row['x'], row['y']) for _, row in X1.iterrows()])
         all_segments2 = points_to_segments([Point(row['x'], row['y']) for _, row in X2.iterrows()])
 
-        intersection, time_ = sweep_line_intersection(all_segments1, all_segments2)
+        intersection = True
+        while intersection:
 
-        time_intersection += time_
+            intersection, time_ = sweep_line_intersection(all_segments1, all_segments2)
 
-        if intersection:
-            print("Intersects\n")
-            continue
-        else:
-            print("Not intersects")
+            time_intersection += time_
+
+            if intersection:
+                print("Intersects\n")
+                print("Removing intersect points...")
+                # remove the intersect points
+                
+
+        print("Not intersects")
 
         # ax + by + c = 0
         (a, b, a_p1, a_p2), time_ = linear_separation(hull1, hull2)

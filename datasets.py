@@ -50,6 +50,34 @@ def load_california_housing_():
     df['target'] = df['target'].apply(lambda x: 1 if x > 2.068 else 0)
     return df
 
+def load_mobile():
+    """1 if the mobile has bluetooth, 0 otherwise"""
+    df = pd.read_csv('data/mobile.csv')
+    df = df.rename(columns={'blue': 'target'})
+    return df
+
+def load_diabetes2():
+    """1 If the patient has diabetes, 0 otherwise"""
+    df = pd.read_csv('data/diabetes.csv')
+    df = df.rename(columns={'diabetes': 'target'})
+    df['gender'] = df['gender'].apply(lambda x: 1 if x == 'Female' else 0)
+    df['smoking_history'] = df['smoking_history'].apply(lambda x: 0 if x == 'never' else 4 if x == 'No Info' else 5 if x == 'ever' else 8 if x == 'former' else 8 if x == 'not current' else 10)
+    return df
+
+def load_pokemon():
+    df = pd.read_csv('data/pokemon.csv')
+    df = df.drop(['#', 'Name', 'Type 2', 'Generation', 'Legendary'], axis=1)
+    df = df.rename(columns={'Type 1': 'target'})
+    unique_classes = np.unique(df['target'])
+
+    type_to_number = {}
+    for type in unique_classes:
+        type_to_number[type] = len(type_to_number)
+    type_to_number
+
+    df['target'] =  df['target'].apply(lambda x: type_to_number[x])
+    return df
+
 
 datasets = {
     "iris": load_iris_,
@@ -58,7 +86,10 @@ datasets = {
     "breast_cancer": load_breast_cancer_,
     "linnerud": load_linnerud_,
     "diabetes": load_diabetes_,
-    "california_housing": load_california_housing_
+    "california_housing": load_california_housing_,
+    "mobile": load_mobile,
+    "diabetes2": load_diabetes2,
+    "pokemon": load_pokemon
 }
 
 
