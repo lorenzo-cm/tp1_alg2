@@ -1,4 +1,4 @@
-from utils import Point, timer
+from functions.utils import Point, timer
 import numpy as np
 
 # does not need to be super fast because it is used in hulls

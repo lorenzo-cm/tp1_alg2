@@ -1,4 +1,4 @@
-from utils import Point, Segment, orientation, timer
+from functions.utils import Point, Segment, orientation, timer
 import heapq
 
 class Event:

@@ -1,8 +1,9 @@
 import numpy as np
 from functools import cmp_to_key
 
-from utils import *
-import utils
+from functions.utils import *
+import functions.utils as utils
+
 
 @timer
 def graham_scan(points: list[Point]) -> list[Point]:
