@@ -74,17 +74,37 @@ if __name__ == '__main__':
         all_segments2 = points_to_segments([Point(row['x'], row['y']) for _, row in X2.iterrows()])
 
         intersection = True
-        while intersection:
 
-            intersection, time_ = sweep_line_intersection(all_segments1, all_segments2)
+        (intersection, collided_segments), time_ = sweep_line_intersection(all_segments1, all_segments2)
 
-            time_intersection += time_
+        time_intersection += time_
 
-            if intersection:
-                print("Intersects\n")
-                print("Removing intersect points...")
-                # remove the intersect points
-                
+        if intersection:
+            print("Intersects\n")
+            print("Removing intersect points...")
+
+            counter = 0
+            while intersection:
+                (intersection, collided_segments), time_ = sweep_line_intersection(all_segments1, all_segments2)
+
+                if counter > 15:
+                    print("Too many iterations of removing intersect points")
+                    break
+
+                time_intersection += time_
+                for segment1, segment2 in collided_segments:
+                    segment1_rounded = segment1.rounded()
+                    segment2_rounded = segment2.rounded()
+                    
+                    if segment1_rounded in [s.rounded() for s in all_segments1]:
+                        all_segments1.remove(segment1)
+                        
+                    if segment2_rounded in [s.rounded() for s in all_segments2]:
+                        all_segments2.remove(segment2)
+
+                counter += 1
+
+            print(f'Number of iterations removing intersect points: {counter}')
 
         print("Not intersects")
 

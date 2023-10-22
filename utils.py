@@ -18,11 +18,37 @@ class Point:
     
     def __iter__(self):
         return iter((self.x, self.y))
+    
+    def __hash__(self) -> int:
+        return hash((self.x, self.y))
+    
+    def __getitem__(self, index):
+        if index == 0:
+            return self.x
+        elif index == 1:
+            return self.y
+        else:
+            raise IndexError("Point indices must be 0 or 1")
 
 
 class Segment:
     def __init__(self, p1: Point, p2: Point):
         self.points = [p1, p2]
+
+    def __repr__(self) -> str:
+        return f'[{self.points[0]}, {self.points[1]}]'
+
+    def __eq__(self, other):
+        return self.points == other.points
+    
+    def __hash__(self) -> int:
+        return hash(tuple(self.points))
+    
+    def rounded(self, decimals=5):
+        return Segment(
+            (round(self.points[0][0], decimals), round(self.points[0][1], decimals)),
+            (round(self.points[1][0], decimals), round(self.points[1][1], decimals))
+        )
 
 
 def orientation(p0: Point, p1: Point, p2: Point) -> int:

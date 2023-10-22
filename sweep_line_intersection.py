@@ -27,7 +27,7 @@ def do_segments_intersect(s1: Segment, s2: Segment) -> bool:
     return o1 != o2 and o3 != o4
 
 @timer
-def sweep_line_intersection(segments1: list[Segment], segments2: list[Segment]) -> bool:
+def sweep_line_intersection(segments1: list[Segment], segments2: list[Segment]) -> tuple[bool, list[tuple[Segment, Segment]]]:
     events: list[Event] = []
     for segment in segments1:
         left, right = sorted(segment.points, key=lambda p: p.x)
@@ -44,13 +44,15 @@ def sweep_line_intersection(segments1: list[Segment], segments2: list[Segment]) 
     active_segments1: set[Segment] = set()
     active_segments2: set[Segment] = set()
 
+    intersecting_pairs = []
+
     while events:
         event = heapq.heappop(events)
         if event.segment in segments1:
             if event.is_left:
                 for active_segment in active_segments2:
                     if do_segments_intersect(event.segment, active_segment):
-                        return True
+                        intersecting_pairs.append((event.segment, active_segment))
                 active_segments1.add(event.segment)
             else:
                 active_segments1.remove(event.segment)
@@ -58,9 +60,9 @@ def sweep_line_intersection(segments1: list[Segment], segments2: list[Segment]) 
             if event.is_left:
                 for active_segment in active_segments1:
                     if do_segments_intersect(event.segment, active_segment):
-                        return True
+                        intersecting_pairs.append((event.segment, active_segment))
                 active_segments2.add(event.segment)
             else:
                 active_segments2.remove(event.segment)
 
-    return False
+    return len(intersecting_pairs) > 0, intersecting_pairs
